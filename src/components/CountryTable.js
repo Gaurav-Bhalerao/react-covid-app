@@ -12,8 +12,6 @@ const CountryTable = (props) => {
 
     // the function is getting its values from Paginantion.js and changing the values of pagevalues Hook
     const changePageValues = (start, end) => {
-        console.log("Start : ", start);
-        console.log("End : ", end);
         setpagevalues({
             startPoint : start,
             endPoint : end,
