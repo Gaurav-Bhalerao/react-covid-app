@@ -8,7 +8,7 @@ const Pagination = (props) => {
     useEffect(() => {
         const values = props.showperpage * pagecounter;
         props.changePageValues(values - props.showperpage, values);
-    });
+    },[pagecounter]);
 
     return (<>
         <div className="pagination_container container text-center">
