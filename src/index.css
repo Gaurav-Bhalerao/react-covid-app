@@ -1,13 +1,70 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #dc3545;
+  color: #f8f9fa;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+
+/* Header.js */
+.header_container {
+  height: 80px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.header #header_logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.header #shortLogo {
+  font-size: 2rem;
+  font-weight: bold;
+  display: none;
+}
+
+@media (max-width : 768px) {
+  .header #header_logo {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width : 418px) {
+  .header {
+    flex-direction: column;
+    height: 100px;
+  }
+}
+
+
+/* CardComp.js */
+.card_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width : 768px) {
+  .card_container {
+    flex-direction: column;
+  }
+}
+
+/* CountryTable.js */
+
+/* Pagination.js */
+.pagination_container button {
+  width: 100px;
 }
