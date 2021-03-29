@@ -3,7 +3,7 @@ import Pagination from './Pagination';
 
 const CountryTable = (props) => {
     // number of data to show per page
-    const [showperpage, setshowpage] = useState(7);
+    const showperpage = 7;
     // starting and ending values for padination next and previous buttons // value is used in slice
     const [pagevalues, setpagevalues] = useState({
         startPoint : 0,

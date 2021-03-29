@@ -11,7 +11,7 @@ const App = () => {
   /*
   // sorting countries by the largest number of cases
   const sortData = (arrayofobject) => {
-    const sortedData = [...arrayofobject];
+    const sortedData = [...arrayofobject]; 
     sortedData.sort((a, b) => {
       if(a.cases > b.cases) {
         return -1;
