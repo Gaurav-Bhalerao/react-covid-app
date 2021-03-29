@@ -8,15 +8,15 @@ const Pagination = (props) => {
     useEffect(() => {
         const values = props.showperpage * pagecounter;
         props.changePageValues(values - props.showperpage, values);
-    },[pagecounter]);
+    }, [pagecounter]);
 
     return (<>
         <div className="pagination_container container text-center">
             <nav className="d-flex justify-content-center">
-                <ul class="pagination">
+                <ul className="pagination">
                     <li className="page-item">
                         <button className="btn btn-primary mx-2" href="!#" onClick={()=>{ pagecounter === 1 ? setpagecounter(1) : setpagecounter(pagecounter - 1) }}>
-                            <span aria-hidden="true">&laquo; Previous </span>
+                            <span>&laquo; Previous </span>
                         </button>
                     </li>
                     
@@ -30,9 +30,9 @@ const Pagination = (props) => {
                         })
                     */}
 
-                    <li class="page-item">
+                    <li className="page-item">
                         <button className="btn btn-primary mx-2" onClick={()=>{ /*numbercounterbutttons*/ Math.ceil(props.dataLength / props.showperpage) === pagecounter ? setpagecounter(pagecounter) : setpagecounter(pagecounter + 1) }}>
-                            <span aria-hidden="true"> Next &raquo;</span>
+                            <span> Next &raquo;</span>
                         </button>
                     </li>
                 </ul>
